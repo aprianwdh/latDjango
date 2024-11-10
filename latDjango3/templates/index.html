@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{judul}} | {{pembuat}}</title>
+</head>
+<body>
+    <h1>{{judul}}</h1>
+    <h2>welkom to the {{judul}} by {{pembuat}}</h2>
+
+    <ul>
+        {% for link,name in nav.items %}
+
+        <li>
+            <a href="{{link}}">{{name}}</a>
+        </li>
+
+        {% endfor %}
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit.
+         Minima nulla laudantium doloribus ear
+         um, veniam illo dignissimos fugiat incidunt nemo aliquid illum cumque. Similique illo in obcaecati a, commodi voluptatem eum?</p>
+</body>
+</html>

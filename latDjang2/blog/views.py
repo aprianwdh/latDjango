@@ -16,7 +16,7 @@ def tierList(request):
         'creator':'aprwdh',
         'url':'tier list'
     }
-    return render(request,'blog/tierList.html',contex)
+    return render(request,'blog/index.html',contex)
     # return HttpResponse("aoidjeajdoa")
 
 def news(request):
@@ -25,7 +25,7 @@ def news(request):
         'creator':'aprwdh',
         'url':'News'
     }
-    return render(request,'blog/tierList.html',contex)
+    return render(request,'blog/index.html',contex)
 
 def comunity(request):
     contex = {
@@ -33,4 +33,4 @@ def comunity(request):
         'creator':'aprwdh',
         'url':'Comunity'
     }
-    return render(request,'blog/tierList.html',contex)
+    return render(request,'blog/index.html',contex)
