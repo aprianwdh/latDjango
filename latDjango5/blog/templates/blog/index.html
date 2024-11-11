@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<img src="{% static "blog/images/blog.png" %}" alt="Blog Banner" style="height: 300; width: 100%;;object-fit: cover;">
+<h1>Selamat Datang di {{title}} | {{pembuat}}
+{% endblock content %}
