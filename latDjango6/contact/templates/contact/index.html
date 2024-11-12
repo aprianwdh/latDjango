@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static css_app %}">
+<body>
+    <img src="{% static "images/CONTACTPAGE.png" %}" alt="contact Banner" width='100%'>
+
+    <header class="hero">
+        <h1>Kontak Kami</h1>
+        <p>Jika Anda memiliki pertanyaan, silakan hubungi kami melalui formulir di bawah ini.</p>
+    </header>
+    
+    <section class="contact">
+        <h2>Form Kontak</h2>
+    </section>
+</body>
+
+{% endblock content %}

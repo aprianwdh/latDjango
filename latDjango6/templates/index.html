@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <img src="{% static "images/HOMEPAGE.png" %}" alt="Home Banner" width='100%'>
+    <header class="hero">
+        <h1>Selamat Datang di {{title}} {{pembuat}}</h1>
+        <p>Ini adalah halaman beranda sederhana yang menggunakan HTML dan CSS.</p>
+        <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+    </header>
+
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah perusahaan yang menyediakan berbagai layanan terbaik untuk Anda. Kami berkomitmen untuk memberikan kualitas terbaik dalam setiap layanan yang kami tawarkan.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Layanan Kami</h2>
+        <ul>
+            <li>Layanan 1</li>
+            <li>Layanan 2</li>
+            <li>Layanan 3</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 {{pembuat}}. Semua hak dilindungi.</p>
+    </footer>
+{% endblock content %}
